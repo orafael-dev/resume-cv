@@ -1,0 +1,130 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{5pt}{1pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Rafael Almeida} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} almeidarp.dev@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} (67) 9 9607-4571}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} github.com/orafael-dev}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/orafael-almeida}}}
+\end{tabularx}
+
+\section{Sobre mim}
+\color[HTML]{1C033C}\textbf{}Desenvolvedor Fullstack graduando em Engenharia de Software, com mais de 1 ano de experiência em projetos desafiadores e diversificados. Sou reconhecido pela capacidade de aprender rapidamente, dominar conceitos técnicos com profundidade e aplicar soluções eficientes buscando sempre ir além da simples reprodução de código. Tenho como prioridade entregar resultados de alta performance e contribuir para o sucesso das equipes em que atuo.  Sou reconhecido por manter um ambiente de trabalho colaborativo, positivo e motivador, estou sempre em busca de novos desafios para crescer e superar expectativas.
+
+\section{Habilidades}
+\color[HTML]{1C033C}\textbf{Linguagens:} JavaScript, TypeScript, Golang, SQL\\
+\color[HTML]{1C033C}\textbf{Front-end \& Tools:} ReactJS, NextJS, HTML, CSS, SASS, TailwindCSS, Styled Components, Bootstrap, Material UI, Redux, Zustand, React Hook Form, TanStack Query, Framer Motion, GSAP. \\
+\color[HTML]{1C033C}\textbf{Back-end \& Tools:} Node.js, NestJS, Express, API Rest, GraphQl, Axios, Docker, Docker Compose, TypeORM, Prisma, Mongoose, JWT, Bcrypt, Multer, FileSystem, Postman, Insomnia, Swagger, Jest, Postgres, MySQL, MongoDB.  \\
+\color[HTML]{1C033C}\textbf{Outros:} Git, Git Flow, Figma, Scrum, Kanban, npm/yarn/nvm, Jira, Slack, GitHub Projects, DevTools.
+
+\section{Experiência}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{Infinity Tec, Remoto}} \hfill \color[HTML]{371e77} Jul 2024 - Presente \\
+\color[HTML]{371e77}\textbf{\textit{Desenvolvedor Fullstack / QA Tester}} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+\item Desenvolvimento de scripts para automação de tarefas, testes end-to-end em aplicações web, mapeamento de bugs na aplicação e testes de rotas utilizando API Clients como Postman e Insomnia tendo como referência documentação da aplicação via Swagger.
+\item Responsável pelo desenvolvimento de script que utiliza algoritmos para comparar arquivos em diferentes bancos de dados no ecossistema da empresa e atualiza as imagens conforme a instrução recebida além de gerar logs dos arquivos atualizados ou não localizados.
+\item Utilização de Conventional Commits aliados ao Git Flow e Kanban para garantir um fluxo de trabalho em equipe organizado e eficiente.
+\item Node.js, Postgres SQL, DBeaver/PG admin, Postman, Swagger, DevTools, Jira e Kanban.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{NonnoApp, Híbrido}} \hfill \color[HTML]{371e77} Jun 2023 - Dez 2023 \\
+\color[HTML]{371e77}\textbf{\textit{Customer Success Specialist}} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+\item Como profissional especialista em sucesso do cliente, fui responsável por garantir a satisfação e sucesso contínuo dos clientes, oferecendo sempre um suporte proativo, descontraído e humanizado com foco em atender as necessidades dos clientes e maximizar o valor percebido nos produtos comercializados pela empresa.
+\item Implementei um novo sistema de monitoramento de satisfação de todos os clientes cadastrados em nosso CRM que acompanha o aumento de satisfação do cliente resultando em uma elevação do NPS de 60 para 85, aproximadamente.
+\item Responsável por diminuir a taxa de cancelamento (churn) de clientes, resolvendo conflitos e contornando objeções e, por consequência, impactando diretamente no LTV gerado pelos clientes que foram convertidos.
+\item CRM, RD Station, Exact Spotter, Slack, ClickUp, Trello e Excel.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\section{Educação}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Engenharia de Software} & \hfill \color[HTML]{371e77} Jun 2024 - Dez 2027 \\
+\color[HTML]{371e77} Universidade Estácio de Sá & \hfill \color[HTML]{4B28A4} \textit{\textbf{CR: 9.6/10}} \\
+\multicolumn{2}{@{}X@{}}{}
+\end{tabularx}
+
+\section{Cursos e Certificados}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+\item \textbf{Full-Stack Javascript - OneBitCode:} Html, CSS, Javascript, TypeScript, React, Next.js, Node.js.
+\item \textbf{Front-end Javascript - Origamid:} Noções de UX/UI, React com ênfase em Next.js.
+\item \textbf{Desenvolvimento de API com Node.js - Udemy:} API Rest, Typescript, Node.js, SQLite TypeORM, JWT, Refresh Token, Multer e Swagger.
+\item \textbf{NestJS Fundamentos - Hcode Treinamentos:} Nestjs, Typescript, API Rest, Prisma, TypeORM, JWT, Nodemailer, CORS e Swagger.
+\item \textbf{NestJS do zero - Udemy:} Nestjs, API Rest, Postgres, MongoDB, Prisma, TypeORM, Mongoose.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\section{Idiomas}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Inglês:} Intermediário Avançado - B2 & \textbf{Espanhol:} Intermediário Avançado - B2
+\end{tabularx}
+
+\end{document}
